@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ФИО</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
+</head>
+
+<body>
+	<form action="/reg" method="POST" id="regForm">
+		<p id="title">Введите свою фамилию, имя и отчество, отделяя слова знаком пробела </p>
+		<div class="l_col">
+			<p class="fio">Введите ФИО</p>
+			<input type="text" name="name" id="name" class="textbox"/>
+			<p class="help">Разрешено использовать буквы русского алфавита, знак пробела, тире.</p>
+		</div>
+		<div class="r_col">
+			<p>Ваше ФИО:</p>
+			<span id="result"></span>
+		</div>
+		<div class="wrapper_button">
+			<a class="show_popup" id="send" rel="reg_form" href="#">Подтвердить</a>
+		</div>
+	</form>
+
+	<div class="popup reg_form">
+		<p>Добро пожаловать, <span class="result_fio"></span></p>
+		<a class="close" href="#">x</a>
+	</div> 
+	
+</body>
+
+<script type="text/javascript" src="js/my_scripts.js"></script>
+</html>
+
