@@ -59,7 +59,7 @@ $("#send").click(function(){
 		return false;
 	});
   } else {
-    $('#name').notify("Заполните поле полностью", "error");
+    $('#name').notify("Заполните поле корректно", "error");
   }
 
 });
